@@ -1,0 +1,40 @@
+<p> <%= link_to raw("Back to list &raquo;") , contributers_path  ,:class => "link_button"%> </p>
+<p> <%= link_to "(+) Add a kshetram" , new_kshetram_path , :class => "link_button"%> </p>
+<table class="form">
+	<tr>
+		<td> Name </td>
+		<td> <%=text_field "contributer" , "name" %> </td>
+	</tr>
+	<tr>
+		<td> Surname</td>
+		<td> <%= text_field "contributer" , "surname" %></td>
+	</tr>
+	<tr>
+		<td> Acharyan</td>
+		<td> <%= text_field "contributer" , "acharyan" %></td>
+	</tr>	
+	<tr>
+		<td> Email </td>
+		<td> <%= text_field "contributer" , "email" %></td>
+	</tr>	
+	<tr>
+		<td> phone</td>
+		<td> <%= text_field "contributer" , "phone" %></td>
+	</tr>	
+	<tr>
+		<td> Kshetram </td>
+		<td> <%= select_tag "kshetram"  , options_for_select (@kshetram_collection ) %></td>
+	</tr>		
+	<tr>
+		<td> Abhimana Kshetram </td>
+		<td> <%= select_tag "adhimana_kshetram"  , options_for_select (@kshetram_collection) %></td>
+	</tr>			
+	<tr>
+		<td> Amount </td>
+		<td> <%= text_field "contributer" , "amount" %></td>
+	</tr>	
+	<tr>
+		<td> <%=submit_tag "save"%> </td>
+		<td> <%=submit_tag "Reset" ,:type => "reset"%> </td>
+	</tr>
+</table>

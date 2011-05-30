@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<title> ASTA </title>
+<head>
+  <title>Asta</title>
+  <%= stylesheet_link_tag 'asta' %>
+  <%#= javascript_include_tag :defaults %>
+  <%= csrf_meta_tag %>
+</head>
+<body>
+<div class="container">
+<h1 class="logo">ASTA</h1>
+			<div class="menu">
+				<ul>
+					<li> <%= link_to "Home" , root_path %>  </li>
+					<li> <a href="/kshetrams">Kshetrams</a> </li>
+					<li> <a href="/contributers">Contributers</a> </li>
+					<li> <%= link_to "Contact Us" , contact_us_path %> </li>
+				</ul>
+			</div>
+<%= yield %>
+</div>
+</body>
+</html>

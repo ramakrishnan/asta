@@ -1,0 +1,18 @@
+<div class="page_title"><h3>List all kshetrams</h3></div>
+<a class="link_button" href="/kshetrams/new"> (+) Add a new kshetram</a>
+<table class="listing">
+<tr>
+	<th>Name</th>
+	<th>Place</th>
+	<th>Edit</th>
+</tr>	
+<% odd_even = 0
+for kshetram in @kshetrams 
+odd_even = 1 - odd_even
+-%>
+	<tr class="color_<%=odd_even%>">
+		<td> <%=kshetram.name %> </td>
+		<td> <%=kshetram.place %> </td>
+		<td> <%=link_to "Edit" , edit_kshetram_path(kshetram.id) %>
+<% end -%>
+</table>

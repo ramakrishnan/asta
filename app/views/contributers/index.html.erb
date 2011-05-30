@@ -1,0 +1,28 @@
+<div class="page_title"><h3>List all contributers</h3></div>
+<a class="link_button"href="/contributers/new">(+) Add a new contribution</a>
+<table class="listing" style="width:800px;">
+<tr>
+	<th> Name </th>
+	<th> Surname </th>
+	<th> Email </th>
+	<th> Phone </th>
+	<th> To Kshetram </th>
+	<th> Abhimna Kshetram </th>
+	<th> Amount </th>
+	<th> Edit </th>
+</tr>
+<% odd_even = 0
+for contributer in @contributers 
+odd_even = 1 - odd_even
+-%>
+	<tr class="color_<%=odd_even%>">
+		<td> <%=contributer.name %> </td>
+		<td> <%=contributer.surname %> </td>
+		<td> <%=contributer.email %> </td>
+		<td> <%=contributer.phone %> </td>
+		<td> <%=contributer.to_kshetram %> -- <%=contributer.to_kshetram_place %> </td>
+		<td> <%=contributer.my_kshetram %> -- <%=contributer.my_kshetram_place %> </td>
+		<td> <%=contributer.amount %> </td>
+		<td> <%=link_to "Edit" , edit_contributer_path(contributer.id) %>
+<% end -%>
+</table>
