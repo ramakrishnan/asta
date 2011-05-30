@@ -1,0 +1,105 @@
+			body {
+			background-color:#0000FF;
+			font-family:helvetica,arial;
+			font-size:12px;
+			}
+			a {
+				text-decoration:none;
+			}
+			a:hover {
+				text-decoration:underline;
+			}			
+			div.container {
+				width:80%;
+				margin:auto;
+				padding:0px 30px;
+				border-radius:15px;
+				-moz-border-radius:15px;
+				background-color:#FFFFFF;
+				min-height:800px;
+				height:100%
+			}
+			 h1.logo {
+				font-size:60px;
+				font-weight:bold;
+				margin:10px 0 10px 0;
+				border-bottom:2px solid #C2C2C2;
+				padding-top:10px;
+				text-shadow:3px 7px 4px #C2C2C2;
+			}
+			div.menu {
+				background-color:#ADBA8A;
+				background-image: -webkit-gradient(
+					linear,
+					left bottom,
+					left top,
+					color-stop(0.35, rgb(173,186,138)),
+					color-stop(0.96, rgb(176,212,195))
+				);
+				background-image: -moz-linear-gradient(
+					center bottom,
+					rgb(173,186,138) 35%,
+					rgb(176,212,195) 96%
+				);
+				height:25px;
+				margin:0 0 10px;
+			}
+			div.menu ul li {
+				float:left;
+				list-style:none outside none;
+				margin:5px 10px 0;
+			}
+			div.menu ul li  a { 
+				color:#FFFFFF;
+			}
+			
+			div.menu ul {
+				margin:0px;
+				padding:0px;
+			}
+			div.page_title h3 {
+				font-size:30px;
+				font-weight:normal;
+				margin:20px 0;
+			}
+			
+			table.listing{
+				border-collapse:collapse;
+				border-left:1px solid #CCCCCC;
+				border-top:1px solid #CCCCCC;
+				color:#333333;
+				font-family:Verdana,Arial,Helvetica,sans-serif;
+				width:500px;
+				margin:10px;
+			}
+			table.listing th {
+				text-transform:uppercase;
+				background-color:#E2E2E2;		
+				line-height:1.8em;
+				padding:5px;
+			}
+			table.listing th , table.listing td {
+				border-bottom:1px solid #CCCCCC;
+				border-right:1px solid #CCCCCC;
+			}
+			table.listing td {
+				padding:5px 0 5px 10px;
+			}
+			table.listing tr.color_0 {
+				background-color:#EFEFEF;
+			}
+			table.listing tr.color_1 {
+				background-color:#FFFFFF;
+			}
+			a.link_button {
+				text-decoration:none;
+				margin:5px;
+				font-weight:bold;
+				font-size:14px;
+			}
+			table.form {
+				margin:10px 0px;
+			}
+			table.form td {
+				padding:3px;
+			}
