@@ -103,3 +103,31 @@
 			table.form td {
 				padding:3px;
 			}
+			p.para {
+				line-height:2;
+				margin:0px;
+				padding: 0 10px;
+				text-align:justify;
+			}
+			div.pasuram {
+				width:400px;
+				margin:auto;
+				text-align:center;
+			}
+			div.pasuram span.title {
+				font-weight:bold;
+				color:#0000FF;
+				font-size:14px;
+				line-height:3;
+			}
+			div.pasuram p {
+				color:#FF0000;
+				font-size:14px;
+				font-weight:bold;
+				line-height:1.5;
+				margin:0px;
+			}
+			h2.doc_title {
+				margin;0px;	
+				text-align:center;
+			}
